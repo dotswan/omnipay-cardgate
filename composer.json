@@ -21,7 +21,9 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\Cardgate\\" : "src/" }
+        "psr-4": { 
+            "Omnipay\\Cardgate\\" : "src/" 
+        }
     },
     "require": {
         "league/omnipay": "^3.0"
@@ -30,10 +32,5 @@
         "omnipay/tests": "^3.1",
         "squizlabs/php_codesniffer": "^3.4",
         "phpunit/phpunit": "^6.0"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
     }
 }
