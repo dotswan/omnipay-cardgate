@@ -48,7 +48,8 @@ class FetchIssuersRequest extends AbstractRequest
 
             $httpResponse = json_decode($response->getBody()->getContents(), true);
 
-        } catch (Exception $e) {
+        } 
+        catch (Exception $e) {
             if ($this->getTestMode()) {
                 throw new InvalidResponseException('CardGate RESTful API gave : ' . $e->getMessage(), $e->getCode());
             } else {
@@ -56,7 +57,6 @@ class FetchIssuersRequest extends AbstractRequest
             }
         }
         return $this->response = new FetchIssuersResponse ($this, $httpResponse);
-
     }
 
 }
