@@ -1,5 +1,5 @@
 {
-    "name": "soliditree/omnipay-cardgate",
+    "name": "dotswan/omnipay-cardgate",
     "description": "Cardgate gateway for the Omnipay payment processing library",
     "keywords": [
         "gateway",
